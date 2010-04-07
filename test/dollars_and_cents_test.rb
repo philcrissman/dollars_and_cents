@@ -2,6 +2,9 @@
 # environment.
 module ActiveRecord
   class Base
+    # def column_names
+    #   return instance_variables
+    # end
   end
 end
 
@@ -10,12 +13,12 @@ require 'lib/dollars_and_cents'
 
 class DollarsAndCentsTest < Test::Unit::TestCase
 
-  class TestRecord
+  class TestRecord < ActiveRecord::Base
     include DollarsAndCents
     attr_accessor :price_in_cents, :msrp_in_cents, :burning_in_cents
   end
   
-  class TestPickyRecord
+  class TestPickyRecord < ActiveRecord::Base
     include DollarsAndCents
     attr_accessor :price_in_cents, :price
   end
