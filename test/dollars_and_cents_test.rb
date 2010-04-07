@@ -1,26 +1,19 @@
-# I'm a dummy class to keep D&C from complaining when loaded outside of a Rails
-# environment.
-module ActiveRecord
-  class Base
-    # def column_names
-    #   return instance_variables
-    # end
-  end
-end
+require 'test_helper'
 
-require 'test/unit'
-require 'lib/dollars_and_cents'
-
-class DollarsAndCentsTest < Test::Unit::TestCase
+class DollarsAndCentsTest < ActiveSupport::TestCase
+  load_schema
 
   class TestRecord < ActiveRecord::Base
     include DollarsAndCents
-    attr_accessor :price_in_cents, :msrp_in_cents, :burning_in_cents
   end
-  
+
   class TestPickyRecord < ActiveRecord::Base
     include DollarsAndCents
-    attr_accessor :price_in_cents, :price
+  end
+
+  def test_schema_has_loaded_correctly
+    assert_equal [], TestRecord.all
+    assert_equal [], TestPickyRecord.all
   end
   
   F_PRICE   = 2999
@@ -120,4 +113,5 @@ class DollarsAndCentsTest < Test::Unit::TestCase
     @record.price = "18.92"
     assert_equal 1892, @record.price_in_cents
   end
+  
 end

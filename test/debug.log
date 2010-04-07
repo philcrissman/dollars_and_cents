@@ -1,0 +1,298 @@
+# Logfile created on Wed Apr 07 17:19:15 -0500 2010 by logger.rb/22285
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;35;1mDollarsAndCentsTest::TestRecords Load (0.2ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecords Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecords Load (0.2ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecords Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecords Load (0.2ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecords Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecords Load (0.2ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecords Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.1ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.1ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.1ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.3ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.1ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (13.5ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.2ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mDROP TABLE "test_records"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "test_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "msrp_in_cents" integer, "burning_in_cents" integer) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mDROP TABLE "test_picky_records"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "test_picky_records" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "price_in_cents" integer, "price" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mDollarsAndCentsTest::TestRecord Load (0.1ms)[0m   [0mSELECT * FROM "test_records" [0m
+  [4;36;1mDollarsAndCentsTest::TestPickyRecord Load (0.1ms)[0m   [0;1mSELECT * FROM "test_picky_records" [0m

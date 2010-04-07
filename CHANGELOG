@@ -1,3 +1,7 @@
+= April 7, 2010
+
+Rewired the tests, restructured the plugin slightly. Essentially unchange.
+
 = August 4, 2009
 
 Fixed an issue with AssociationProxy so that it will properly provide a 
@@ -30,7 +34,7 @@ do stuff like this:
 
 Also, as he points out, this means you can do this:
 
-  @monkey.update_attributes(params[:monkey)
+  @monkey.update_attributes(params[:monkey])
 
 Please note that any non-numeric strings (e.g., "shazbot" or "twiddle") are
 treated as 0, which means:
